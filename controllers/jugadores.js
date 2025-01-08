@@ -16,7 +16,7 @@ const registrarJugador = async (req, res) => {
         .send({ message: "Se requiere nombre y posición del jugador" });
     }
     await addPlayer({ jugador, teamID });
-    res.json({ message: "Jugador agregado con éxito" });
+    res.status(201).json({ message: "Jugador agregado con éxito" });
   } catch (err) {
     res.status(500).send({ message: "Error en el servidor: " + err.message });
   }
