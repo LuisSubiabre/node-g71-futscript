@@ -20,3 +20,5 @@ app.get("/equipos/:teamID/jugadores", obtenerJugadores);
 app.post("/equipos/:teamID/jugadores", validarToken, registrarJugador);
 
 app.post("/login", login);
+
+module.exports = app;

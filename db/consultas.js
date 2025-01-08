@@ -4,7 +4,7 @@ const format = require("pg-format");
 const pool = new Pool({
   host: "localhost",
   user: "postgres",
-  password: "postgres",
+  password: "213658",
   database: "futscript",
   allowExitOnIdle: true,
 });
